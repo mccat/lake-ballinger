@@ -14,43 +14,38 @@
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/more/css/foundation/foundation.css"/>
-<script src="<?php bloginfo('template_directory'); ?>/more/js/modernizr/modernizr.js"></script>
-
 <?php wp_head(); ?>
 </head>
 
 <body>
 
+<div id="page" class="hfeed site">
 
 <div class="row">
-	
 
 
-	<div id="page" class="hfeed site">
-		
 
 
 			<nav class="top-bar" data-topbar>
 					<ul class="title-area">
-					 
+
 					<li class="name">
-					<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<h1 class="ballingertitle" id="ballingerblogtitle"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					</li>
 					<li class="toggle-topbar menu-icon">
-					<a href="#"><span>menu</span></a>
+					<a href="#"><span></span></a>
 					</li>
 					</ul>
 						<section class="top-bar-section">
 							<ul class="right">
 							<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 							</ul>
-							
+
 						</section>
-			</nav> 
+			</nav>
 
 </div>
 
 
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content spacez">
